@@ -1,9 +1,10 @@
+import { PostgresqlModule } from './database/postgresql.module';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [],
+  imports: [PostgresqlModule],
   controllers: [AppController],
   providers: [AppService],
 })
