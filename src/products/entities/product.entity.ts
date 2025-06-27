@@ -15,5 +15,5 @@ export class Product {
   price: number;
 
   @Column({ nullable: true })
-  imageUrl: string;
+  imageUrl?: string;
 }
